@@ -50,72 +50,115 @@
 
     <a href="/outras_paginas/pagina_secreta.html">Pagina secreta</a>
 
+    <h2>colocando imagems são externas</h2>
 
-<h2> colocando imagems são externas</h2>   
+    <img src="http://placekitten.com/g/200/300" alt="Gatinho" />
+    t=""
+    <img
+      src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+      alt="Google"
+    />
 
-     <img src="http://placekitten.com/g/200/300"alt="Gatinho">
-     t=""
-     <img src="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"alt="Google">
+    <h2>Estas imagens são do nosso proprio site sa pasta imagem</h2>
 
- <h2>Estas imagens são do nosso proprio site sa pasta imagem</h2>   
- 
-      <img src="/imagens/ave.jpg" alt="Ave">
-      <img src="/imagens/gato.jpg" alt="Outro gato">
-<h2>Tags utilizadas em texto</h2>
-      <p>
-        Lorem Ipsum é simplesmente uma simulação de texto da <b>indústria</b> tipográfica e de impressos, e vem sendo utilizado desde o <strong> século XVI</strong>, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco <em>séculos</em>, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus <q>PageMaker</q>.
-      </p>
-                                                
-        <blockquote>Saber e não fazer, é ainda não saber!
-           <cite>Lao Tse</cite>  
-        </blockquote>  
-        
-        <marquee>Este texto vai rodar</marquee>
+    <img src="/imagens/ave.jpg" alt="Ave" />
+    <img src="/imagens/gato.jpg" alt="Outro gato" />
+    <h2>Tags utilizadas em texto</h2>
+    <p>
+      Lorem Ipsum é simplesmente uma simulação de texto da
+      <b>indústria</b> tipográfica e de impressos, e vem sendo utilizado desde o
+      <strong> século XVI</strong>, quando um impressor desconhecido pegou uma
+      bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
+      Lorem Ipsum sobreviveu não só a cinco <em>séculos</em>, como também ao
+      salto para a editoração eletrônica, permanecendo essencialmente
+      inalterado. Se popularizou na década de 60, quando a Letraset lançou
+      decalques contendo passagens de Lorem Ipsum, e mais recentemente quando
+      passou a ser integrado a softwares de editoração eletrônica como Aldus
+      <q>PageMaker</q>.
+    </p>
 
-        <div>uma <span>palavra</span></div>
-        <div>outras</div>
+    <blockquote>
+      Saber e não fazer, é ainda não saber!
+      <cite>Lao Tse</cite>
+    </blockquote>
 
-        <section>Essa é uma secão do meu site </section>
+    <marquee>Este texto vai rodar</marquee>
 
-        <article>Este é um artigo de um jornal ou blog</article>
+    <div>uma <span>palavra</span></div>
+    <div>outras</div>
 
-        <nav> 
-          <ul>
-            <li>sobre</li>
-            <li>contato</li>
-          </ul>
-        </nav>
-        <footer>Esse vai ser o rodapé da sua página </footer>
+    <section>Essa é uma secão do meu site</section>
 
-        <h2>Tabelas</h2>
+    <article>Este é um artigo de um jornal ou blog</article>
 
-        <table style="border: 1px solid">
-          <tr> 
-            <th>Produto</th>
-            <th>Descrição</th>
-            <tH>Preço</tH>
-          </tr>
-          <tr> 
-            <td>Banana</td>
-            <td>Amarela</td>
-            <td>R$10,00/KG</td>
-          </tr>
-          <tr> 
-            <td>Macarrão</td>
-            <td>Comida </td>
-            <td>R$12,00</td>
-          </tr>
-          <tr> 
-            <td>molho</td>
-            <td>tomate</td>
-            <td>R$10,00</td>
-          </tr>
-        </table>
-</body>    
+    <nav>
+      <ul>
+        <li>sobre</li>
+        <li>contato</li>
+      </ul>
+    </nav>
+    <footer>Esse vai ser o rodapé da sua página</footer>
+
+    <h2>Tabelas</h2>
+
+    <table style="border: 1px solid">
+      <tr>
+        <th>Produto</th>
+        <th>Descrição</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>Amarela</td>
+        <td>R$10,00/KG</td>
+      </tr>
+      <tr>
+        <td>Macarrão</td>
+        <td>Comida</td>
+        <td>R$12,00</td>
+      </tr>
+      <tr>
+        <td>molho</td>
+        <td>tomate</td>
+        <td>R$10,00</td>
+      </tr>
+    </table>
+
+    <h2>Formulário</h2>
+    <form action="/contato" method="POST">
+      <label>Nome:</label>
+      <input
+        type="text"
+        placeholder="Digite se nome"
+        value="Valor Padrão"
+        name="nome"
+      />
+      <br />
+      <label for="descrição">Descrição</label>
+      <br />
+      <textarea name="descrição" id="Descrição"></textarea>
+      <br />
+      <label for="Estado">Estado</label>
+      <select name="estado">
+        <option>Parana</option>
+        <option>São Paulo</option>
+        <option>Ceara</option>
+        <option>Amazonas</option>
+      </select>
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" disabled/>
+      <br />
+
+      <label for="checkbox">Quero Receber Email:</label>
+      <input type="checkbox" />
+      <br />
+      <label for="radio">Sua idade:</label>
+      0-30 anos <input type="radio" name="age" /> 30-60 anos
+      <input type="radio" name="age" /> 60-100 anos
+      <input type="radio" name="age" />
+      <br />
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
 </html>
-
-     
-
-  
-
-
